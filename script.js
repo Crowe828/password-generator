@@ -10,8 +10,14 @@
 // Code that makes the "generate" button function
 var generateBtn = document.querySelector("#generate");
 
-// Array for letters (uppercased and lowercased)
+// Array of lowercase letters
+var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+// Array of UPPERCASE letters
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
 // Array for special digits
+var spCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "^", "_", "`", "{", "|", "}", "~"]
 
 function generatePassword() {
   
@@ -22,18 +28,32 @@ function generatePassword() {
   if (numPrompt >= 8 && numPrompt <= 128) {
     
     alert("Your password will be " + numPrompt + " characters long.");
-    var lowerCase = confirm("Would you like to include lowercase letters?");
+    var lowerPrompt = confirm("Would you like to include lowercase letters?");
     
-    if (lowerCase = true) {
+    if (lowerPrompt = true) {
 
-      confirm("Would you like to include UPPERCASE letters?");
-    
+      Math.floor(Math.random(lowerCase) * 26);
+      var upperPrompt = confirm("Would you like to include UPPERCASE letters?");
     }
+
+    if (upperPrompt = true) {
+
+      Math.floor(Math.random(upperCase) * 26);
+      var spPrompt = confirm("Would you like to include special characters?");  
+    }
+
+    if (spPrompt = true) {
+
+      Math.floor(Math.random(spCharacters) * 27);    
+    }
+     
+
+
   }
 
   // If password is not the correct length you will receive this message
   else {
-    alert("Please select a corret password length.");
+    alert("Please press ''Generate Password'' or refresh the page to start over.");
   }
 
 
@@ -54,7 +74,7 @@ function generatePassword() {
   // set a "return" of the final output that will display the newly generated password 
 
   //return for the test var, will be changed.
-  return numPrompt;
+  return (numPrompt);
 }
 
 // Write password to the #password input

@@ -17,38 +17,61 @@ var nums = [0,1,2,3,4,5,6,7,8,9]
 function generatePassword() {
   
   // Password cannot be less than 8 or exceed 128 characters total
-  var numPrompt = prompt("Enter number of characters. Must be between 8 and 128 characters.");
+  var numCount = prompt("Enter number of characters. Must be between 8 and 128 characters.");
 
-  // If password is within 8 and 128 characters long, you may proceed
-  if (numPrompt >= 8 && numPrompt <= 128) {
+  // If password is within 8 and 128 characters long, user may proceed
+  if (numCount >= 8 && numCount <= 128) {
     
-    alert("Your password will be " + numPrompt + " characters long.");
+    // An alert letting you know how many characters you selected
+    alert("Your password will be " + numCount + " characters long.");
+
+    // Does the user want to include lowercase letters in their password?
     var lowerPrompt = confirm("Would you like to include lowercase letters?");
     
+    //Whether the user selects ok or cancel it will move on to the next message
     if (lowerPrompt = true || false) {
 
+      // Does the user want to include UPPERCASE letters in their password?
       var upperPrompt = confirm("Would you like to include UPPERCASE letters?");
     }
 
+    //Whether the user selects ok or cancel it will move on to the next message
     if (upperPrompt = true || false) {
 
-      var spPrompt = confirm("Would you like to include special characters?");  
+      // Does the user want to include numbers in their password?
+      var numPrompt  = confirm("Would you like to include numbers?");
     }
 
+    //Whether the user selects ok or cancel it will move on to the next message
+    if (numPrompt = true || false) {
+
+    // Does the user want to include special characters in their password?
+    var spPrompt = confirm("Would you like to include special characters?");
+    }
+
+    //Whether the user selects ok or cancel it will move on to the next message
     if (spPrompt = true || false) {
       
+      // Password was able to be generated
       alert("Password successfully generated!");
     }
-
-    var lowerRand = lowerCase[Math.floor(Math.random() * lowerCase.length)];
-    var upperRand = upperCase[Math.floor(Math.random() * upperCase.length)];
-    var spRand = spCharacters[Math.floor(Math.random() * spCharacters.length)];
-    var numRand = nums[Math.floor(Math.random() * nums.length)];
     
+    // Provides a random lowercase letter
+    var lowerRand = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+        
+    // Provides a random uppercase letter
+    var upperRand = upperCase[Math.floor(Math.random() * upperCase.length)];
+    
+    // Provides a random special character
+    var spRand = spCharacters[Math.floor(Math.random() * spCharacters.length)];
+              
+    // Provides a random number 0-9
+    var numRand = nums[Math.floor(Math.random() * nums.length)];
+        
+    // Concat putting together all 4 arrays
     var pwd = lowerRand.concat(upperRand, spRand, numRand);
-
   }
-
+  
   // If you enter an incorrect length for the password you will receive this message
   else {
     alert("Please press ''Generate Password'' to start over.");

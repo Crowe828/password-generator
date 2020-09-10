@@ -20,13 +20,23 @@ function generatePassword() {
 
   // If password is within 8 and 128 characters long, you may proceed
   if (numPrompt >= 8 && numPrompt <= 128) {
-    alert("Your password will be " + numPrompt + " characters long.")
+    
+    alert("Your password will be " + numPrompt + " characters long.");
+    var lowerCase = confirm("Would you like to include lowercase letters?");
+    
+    if (lowerCase = true) {
+
+      confirm("Would you like to include UPPERCASE letters?");
+    
+    }
   }
 
   // If password is not the correct length you will receive this message
   else {
     alert("Please select a corret password length.");
   }
+
+
   // Set it so that only numbers entered are valid between 8 and 128, including both.
 
   // Set a prompt asking if they would like lowercased letters in their password

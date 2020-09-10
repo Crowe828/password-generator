@@ -1,7 +1,6 @@
-# password-generator
-This is the third homework.
+# Password Generator
 
-# 03 JavaScript: Password Generator
+This is the third homework.
 
 ## Your Task
 
@@ -12,9 +11,9 @@ The password can include special characters. If you’re unfamiliar with these, 
 ## User Story
 
 ```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
+As an employee with access to sensitive data,
+I want to randomly generate a password that meets certain criteria,
+so that I can create a strong password that provides greater security.
 ```
 
 ## Acceptance Criteria

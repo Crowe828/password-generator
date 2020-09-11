@@ -9,19 +9,19 @@ This is application is built with HTML, CSS, and JavaScript. It's primary functi
 
 ## Images
 
-* How the application looks when the user first open the webpage. ![Password Generator](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/about-me-big.png)
+* How the application looks when the user first open the webpage. ![Password Generator](https://github.com/Crowe828/password-generator/blob/master/assets/pw-generator.png)
 
-* The first prompt asks the user how many characters they would like their password to be. ![Password Length](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/about-me-small.png)
+* The first prompt asks the user how many characters they would like their password to be. ![Password Length](https://github.com/Crowe828/password-generator/blob/master/assets/pw-length.png)
 
-* If the user enters a valid number of characters, they will be asked if they would like for their password to include lowercase letters. ![Lowercase Prompt](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/portfolio-big.png)
+* If the user enters a valid number of characters, they will be asked if they would like for their password to include lowercase letters. ![Lowercase Prompt](https://github.com/Crowe828/password-generator/blob/master/assets/pw-lowercase.png)
 
-* Regardless of choice, the user will be asked if they would like to include uppercase letters. ![Uppercase Prompt](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/portfolio-small.png)
+* Regardless of choice, the user will be asked if they would like to include uppercase letters. ![Uppercase Prompt](https://github.com/Crowe828/password-generator/blob/master/assets/pw-uppercase.png)
 
-* Same thing, for numbers. ![Numbers Prompt](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/contact-big.png)
+* Same thing, for numbers. ![Numbers Prompt](https://github.com/Crowe828/password-generator/blob/master/assets/pw-numbers.png)
 
-* Finally, they will be asked if they would like to include special characters in their password. ![Special Characters Prompt](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/contact-small.png)
+* Finally, they will be asked if they would like to include special characters in their password. ![Special Characters Prompt](https://github.com/Crowe828/password-generator/blob/master/assets/pw-special.png)
 
-* Once the user has gone through all of the prompts, they will receive their new password. ![Final Password](https://github.com/Crowe828/responsive-portfolio/blob/master/assets/images/contact-small.png)
+* Once the user has gone through all of the prompts, they will receive their new password. ![Final Password](https://github.com/Crowe828/password-generator/blob/master/assets/pw-result.png)
 
 
 ## Built With
